@@ -1,3 +1,6 @@
+### Notes - Execution Context
+- [Tech Blog for detailed explanation](https://medium.com/@delladominic.sde/js-101-how-javascript-code-runs-behind-the-scenes-execution-context-11e518c15306)
+
 - JS is a single threaded language - one line of code is executed at a time.
 - JS is synchronous - code is executed one line after the other.
 - Code execution and memory allocation happens inside 'execution context'.
@@ -11,5 +14,3 @@
 - Whenever an execution context is created it is pushed into the callstack.
 - Whenecer an execution context is deleted it is popped out of the stack.
 - The program completes, when the Global execution context is popped out of the stack.
-
-[Tech Blog for detailed explanation](https://medium.com/@delladominic.sde/js-101-how-javascript-code-runs-behind-the-scenes-execution-context-11e518c15306)
