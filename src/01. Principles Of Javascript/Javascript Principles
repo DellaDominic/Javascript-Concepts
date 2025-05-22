@@ -1,0 +1,15 @@
+- JS is a single threaded language - one line of code is executed at a time.
+- JS is synchronous - code is executed one line after the other.
+- Code execution and memory allocation happens inside 'execution context'.
+- Execution context has 2 parts - memory space and thread of execution
+- These 2 parts are created in the 2 phases of creation of the context - memory creation phase and code execution phase, respectively.
+- In memory creation phase, the entire code is parsed and variables and constants are assigned undefined and functions are allocated memory with the function body code assigned to it.
+- In the code execution phase the code is executed line by line. values are assigned and reassigned in memory. All sorts of programming computations happen in this phase.
+- To keep track of the thread of execution we have a callstack that contains execution context.
+- the main execution context is the global execution context.
+- Whenever a function is called a function execution context is created.
+- Whenever an execution context is created it is pushed into the callstack.
+- Whenecer an execution context is deleted it is popped out of the stack.
+- The program completes, when the Global execution context is popped out of the stack.
+
+Tech Blog - https://medium.com/@delladominic.sde/js-101-how-javascript-code-runs-behind-the-scenes-execution-context-11e518c15306
